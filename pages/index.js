@@ -8,7 +8,7 @@ import {
 } from "../src/lib/AlurakutCommons";
 import { ProfileRelationsBoxWrapper } from "../src/components/ProfileRelations";
 
-function ProfileSidebar(props) {
+export function ProfileSidebar(props) {
   return (
     <Box>
       <img
@@ -18,7 +18,7 @@ function ProfileSidebar(props) {
       />
       <hr />
       <p>
-        <a className="boxlink" href={`https://github.com/${props.githubUser}`}>
+        <a className="boxLink" href={`https://github.com/${props.githubUser}`}>
           @{props.githubUser}
         </a>
       </p>

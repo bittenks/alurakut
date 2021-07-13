@@ -1,7 +1,8 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import NextLink from "next/link";
-
+import Home from "../../pages";
+import { ProfileSidebar } from "../../pages";
 const BASE_URL = "http://alurakut.vercel.app/";
 const v = "1";
 
@@ -21,7 +22,9 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
+        <AlurakutMenu.Logo
+          src={`https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Logo_ORKUT.svg/1280px-Logo_ORKUT.svg.png`}
+        />
 
         <nav style={{ flex: 1 }}>
           {[
@@ -166,7 +169,6 @@ AlurakutMenu.Logo = styled.img`
   border-radius: 1000px;
   height: 34px;
 `;
-
 function AlurakutMenuProfileSidebar({ githubUser }) {
   return (
     <div className="alurakutMenuProfileSidebar">
@@ -394,7 +396,7 @@ const AlurakutLoginScreen = css`
       align-items: center;
       min-height: 263px;
       @media (min-width: 860px) {
-        min-height: 368px;
+        min-height: 400px;
       }
       p {
         font-size: 12px;
