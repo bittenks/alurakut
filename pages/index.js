@@ -22,7 +22,7 @@ export default function Home() {
   const githubUser = "bittenks";
   const pessoasFavoritas = [
     "artsandrade",
-    "giovannamoeller",
+    "thiagodias63",
     "o3dsn",
     "diego3g",
     "gabrieldejesus",
